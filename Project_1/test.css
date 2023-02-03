@@ -1,31 +1,89 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 1.1fr 1.1fr 1.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Header Header Header Header Header Header Header Header Header"
-      "Family Family Family Family Family Family Quote Quote Quote"
-      "Family Family Family Family Family Family Quote Quote Quote"
-      "Family Family Family Family Family Family Quote Quote Quote"
-      "About About About About About About About About About"
-      "About About About About About About About About About"
-      "About About About About About About About About About"
-      "Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members"
-      "Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members"
-      ". . . Watch Watch Watch . . .";
-  }
-  
-  .Family { grid-area: Family; }
-  
-  .About { grid-area: About; }
-  
-  .Quote { grid-area: Quote; }
-  
-  .Header { grid-area: Header; }
-  
-  .Family-members { grid-area: Family-members; }
-  
-  .Watch { grid-area: Watch; }
-  
-  
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1.1fr 1.1fr 1.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header Header Header Header Header Header Header Header"
+    "Family Family Family Family Family Family Quote Quote Quote"
+    "Family Family Family Family Family Family Quote Quote Quote"
+    "Family Family Family Family Family Family Quote Quote Quote"
+    "About About About About About About About About About"
+    "About About About About About About About About About"
+    "About About About About About About About About About"
+    "Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members"
+    "Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members Family-members"
+    ". . . Watch Watch Watch . . .";
+}
+
+.Family {
+  grid-area: Family;
+}
+
+.Family img{
+border-radius: 3%;
+}
+
+.About {
+  grid-area: About;
+  background-color:#2F2D2E;
+    color: white;
+    border-radius: 10px;
+margin-top: 5%;
+margin-bottom: 5%;
+padding-left: 3%;
+line-height: 120%;
+font-size: 2vw;
+}
+
+.Family-Quote {
+
+  grid-area: Quote;
+  margin: auto;
+  font-size: 3.5vw;
+  padding-left: 5%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+.Header {
+  grid-area: Header;
+}
+
+.Family-members {
+  grid-area: Family-members;
+  display: flex;
+}
+
+.person {
+  flex: 20%;
+  padding: 5px;
+}
+
+.person img {
+  border-radius: 10%;
+}
+
+.person p {
+text-align: center;
+ margin-top: 1%;
+}
+
+
+.Watch {
+  margin: 10%;
+  text-align: center;
+  grid-area: Watch;
+  background-color: coral;
+}
+
