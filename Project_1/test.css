@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.7fr 1.1fr 1.1fr 1.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Header Header Header Header Header Header Header Header Header"
+    "Header . . . . . . . ."
     "Family Family Family Family Family Family Quote Quote Quote"
     "Family Family Family Family Family Family Quote Quote Quote"
     "Family Family Family Family Family Family Quote Quote Quote"
@@ -23,30 +24,37 @@
 
 .Family {
   grid-area: Family;
+  margin-top: 5%;
 }
 
-.Family img{
-border-radius: 3%;
+.Family img {
+
+  display: block;
+  margin: auto;
+  border-radius: 3%;
 }
 
 .About {
   grid-area: About;
-  background-color:#2F2D2E;
-    color: white;
-    border-radius: 10px;
-margin-top: 5%;
-margin-bottom: 5%;
-padding-left: 3%;
-line-height: 120%;
-font-size: 2vw;
+  background-color: #2F2D2E;
+  color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  line-height: 120%;
+  font-size: 2vw;
 }
 
 .Family-Quote {
 
   grid-area: Quote;
   margin: auto;
-  font-size: 3.5vw;
-  padding-left: 5%;
+  font-size: 3.2vw;
+  padding-right: 10%;
   text-align: center;
 }
 
@@ -58,6 +66,12 @@ font-size: 2vw;
 
 .Header {
   grid-area: Header;
+}
+
+.Header img {
+  padding-left: 5%;
+  padding-top: 5%;
+
 }
 
 .Family-members {
@@ -75,15 +89,23 @@ font-size: 2vw;
 }
 
 .person p {
-text-align: center;
- margin-top: 1%;
+  text-align: center;
+  margin-top: 1%;
 }
 
 
 .Watch {
-  margin: 10%;
-  text-align: center;
   grid-area: Watch;
+  font-size: 2vw;
   background-color: coral;
+  margin-bottom: 20%;
+  margin-left: 20%;
+  margin-right:20%;
+  border-radius: 35px;
 }
 
+#watch_link{
+  color: black;
+  margin:auto;
+ 
+}
