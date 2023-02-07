@@ -7,7 +7,7 @@
     display: grid; 
     grid-auto-rows: 1fr; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.1fr 1fr 0.7fr 0.5fr 0.5fr 1fr; 
+    grid-template-rows:0.1fr 1fr 0.8fr 0.5fr 0.5fr 0.2fr;
     gap: 0px 0px; 
   }
   
@@ -38,12 +38,13 @@
     padding-left: 3%;
     padding-right: 3%;
     line-height: 120%;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   
   .Family-Quote {
     grid-area: 2 / 8 / 3 / 13;
     margin: auto;
+   
     font-size: 3.2vw;
     padding-right: 10%;
     text-align: center;
@@ -54,9 +55,9 @@
   }
   
   .Header img {
-    padding-left: 5%;
-    padding-top: 5%;
-  
+    padding-left: 15%;
+    padding-top: 15%;
+    width:50px;
   }
   
   
@@ -89,27 +90,22 @@ margin-top: 10%; }
     width: 70%;
     margin-top: 10%;
   }
-  
 
   
-  
-  
   .Watch {
-    grid-area: 6/ 6 / 6 / 9;
-  
-    font-size: 2vw;
+    grid-area: 6/ 6 / 6 / 9;  
+    font-size: 2.5vw;
     background-color: coral;
-   
+    padding: 15px 32px;   
     border-radius: 35px;
     align-self: center;
-    justify-self: center;
-  
+    justify-self: left;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
   }
   
   #watch_link {
-    color: black;
-    margin: auto;
-    padding-top: 100%;
+    color: black;    
   
   }
   
@@ -119,11 +115,20 @@ margin-top: 10%; }
         display: grid; 
         grid-auto-rows: 1fr; 
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 0.1fr 2fr 1r 2fr 01fr; 
+        grid-template-rows: 0.1fr 1fr 0.8fr 0.5fr 0.1fr;
         gap: 0px 0px; 
       } 
-  
-    .Jay{
+      .Header img {
+        width: 5vw;
+     
+      }
+
+    .Family{
+        width: 70%;
+        margin:auto;
+    }
+    
+      .Jay{
       grid-area: 4 / 1 / 5 / 4; 
       margin-top: 0%;
       width: 90%;
@@ -158,6 +163,8 @@ margin-top: 10%; }
   
     .Watch{
         grid-area: 5 / 5 / 6 / 9;
+        margin-top: -0.1vw;
+        margin-left: 10vw;
     }
    
   }
