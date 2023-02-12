@@ -102,10 +102,11 @@ margin-top: 10%; }
     justify-self: left;
     margin-top: 10vw;
     margin-bottom: 10vw;
+    box-shadow: 5px 5px 10px 2px rgba(100, 95, 95, 0.8);
   }
   
   #watch_link {
-    color: black;    
+    color: white;    
   
   }
   

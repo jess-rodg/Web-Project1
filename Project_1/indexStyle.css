@@ -1,12 +1,139 @@
-.logo img{
-width:50% ;
-
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.homeButton img{
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.Home {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.logo {
+    grid-area: 1 / 2 / 2 / 6;
    
-    padding-top: 15px;
-  
+}
+
+.logo img{
+    width: 140%;
+}
+
+.quote {
+    grid-area: 8 / 1 / 9 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: 2 / 1 / 7 / 13;
+    margin-top: -10%;
+}
+
+.pritchettLink {
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    background-color: coral;
+    margin-top: 90%;
+    margin-bottom: 10%;
+    margin-right: -16%;
+    margin-left: 16%;
+    padding-left: 8%;
+    padding-right: 8%;
+    
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(100, 95, 95, 0.8);
+}
+
+.pritchettLink a{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.photo {
+    grid-area: 1 / 2 / 4 / 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img{
+    width:100%;
+    margin-left: 5%;
+}
+
+.tuckerLink {
+    grid-area: 3 / 1 / 4 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    margin-top:100%;
+    margin-bottom: 70%;
+    margin-right: -115%;
+    margin-left: 40%;
+    padding-left: 10%;
+    padding-right: 8%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(100, 95, 95, 0.8);
+}
+
+.tuckerLink a{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.dunphyLink {
+    grid-area: 2 / 8 / 3/ 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    margin-top: 225%;
+    margin-bottom: -50%;
+    margin-right: -100%;
+    margin-left: 60%;
+    padding-left: 8%;
+    padding-right: 8%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgba(100, 95, 95, 0.8);
+}
+
+.dunphyLink a{
+    font-size: 1.3rem;
+    color: white;
 }
 
 
+
+.about {
+    grid-area: 8 / 1 / 9 / 13;
+}
+
+.success {
+    grid-area: 9 / 1 / 10 / 13;
+}
+
+.reviews {
+    grid-area: 10 / 1 / 11 / 13;
+}
+
+.watch {
+    grid-area: 11 / 1 / 12 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
