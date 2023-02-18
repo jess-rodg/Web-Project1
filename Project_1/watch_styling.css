@@ -42,7 +42,7 @@
 .heading {
     grid-area: 9 / 2 / 10 / 11;
     background-color: coral;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-left: 3%;
     margin-right: 3%;
     padding-left: 3%;
@@ -58,7 +58,7 @@
     grid-area: 10 / 2 / 12 / 11;
     background-color: rgb(44, 43, 43);
     margin-top: 3%;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-left: 3%;
     margin-right: 3%;
     padding-left: 3%;
@@ -83,7 +83,7 @@
     grid-area: 12 / 2 / 14 / 11;
     background-color: rgb(44, 43, 43);
     margin-top: 3%;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-left: 3%;
     margin-right: 3%;
     padding-left: 3%;
@@ -105,7 +105,7 @@
     grid-area: 14 / 2 / 16 / 11;
     background-color: rgb(44, 43, 43);
     margin-top: 3%;
-    border-radius: 10px;
+    border-radius: 50px;
     margin-left: 3%;
     margin-right: 3%;
     padding-left: 3%;
