@@ -5,314 +5,181 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 66.66px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     gap: 0px 0px;
-    grid-auto-flow: row;
+}
+
+.home {
+    grid-area: 1 / 1 / 2 / 13;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo {
+    grid-area: 1 / 12 / 2 / 13;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 
-.quote {
-    grid-area: 4 / 3 / 5 / 11;
-    max-height: 50vh;
-    font-size: 2rem;
+
+.photo {
+    grid-area: 2 / 1 / 5 / 11;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-bottom: 5%;
+    margin-left: 20%;
+}
 
+.pritchettLink {
+    grid-area: 2 / 1 / 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 20%;
+
+}
+
+.pritchettLink a {
+    text-decoration: none;
+    color: white;
+    background-color: coral;
+    box-shadow: 5px 5px 10px 2px rgba(55, 53, 53, 0.8);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+}
+
+.tuckerLink {
+    grid-area: 4 / 1 / 5 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.tuckerLink a {
+    text-decoration: none;
+    color: white;
+    background-color: coral;
+    box-shadow: 5px 5px 10px 2px rgba(55, 53, 53, 0.8);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+}
+
+.dunphyLink {
+    grid-area: 3 / 10 / 4 / 13;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 1.5rem;
+
+}
+
+.dunphyLink a {
+    text-decoration: none;
+    color: white;
+    background-color: coral;
+    box-shadow: 5px 5px 10px 2px rgba(55, 53, 53, 0.8);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+}
+
+.quote {
+    grid-area: 5 / 3 / 6 / 11;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.about {
+    grid-area: 6 / 1 / 7 / 13;
+    background-color: #2F2D2E;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 4%;
+    border-radius: 15px;
+    font-size: 1.3rem;
 }
 
 .family {
-    grid-area: 6 / 1 / 7 / 13;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-area: 7 / 1 / 8 / 13;
 }
 
 .family img {
     width: 105%;
-    padding-bottom: 5%;
+    margin-left: -2%;
+    margin-right: -2%;
 }
-
-.main {
-    display: grid;
-    max-height: 95vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-area: 2 / 1 / 5 / 13;
-    margin-top: -10%;
-}
-
-.pritchettLink {
-    grid-area: 1 / 1 / 2 / 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: coral;
-    margin-top: 100%;
-    margin-bottom: 5%;
-    margin-right: -16%;
-    margin-left: 16%;
-    padding-left: 8%;
-    padding-right: 8%;
-
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 2px rgba(100, 95, 95, 0.8);
-}
-
-.pritchettLink a {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.photo {
-    grid-area: 1 / 2 / 4 / 12;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo img {
-    width: 100%;
-    margin-left: 5%;
-}
-
-.tuckerLink {
-    grid-area: 3 / 1 / 4 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: coral;
-    margin-top: 100%;
-    margin-bottom: 70%;
-    margin-right: -115%;
-    margin-left: 40%;
-    padding-left: 10%;
-    padding-right: 8%;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 2px rgba(100, 95, 95, 0.8);
-}
-
-.tuckerLink a {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.dunphyLink {
-    grid-area: 2 / 8 / 3/ 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: coral;
-    margin-top: 225%;
-    margin-bottom: -50%;
-    margin-right: -100%;
-    margin-left: 60%;
-    padding-left: 8%;
-    padding-right: 8%;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 2px rgba(100, 95, 95, 0.8);
-}
-
-.dunphyLink a {
-    font-size: 1.5rem;
-    color: white;
-}
-
-
-
-.about {
-    grid-area: 5 / 1 / 6 / 13;
-    background-color: #2F2D2E;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
-    font-size: 1.4rem;
-    padding-left: 5%;
-    padding-right: 3%;
-    border-radius: 15px;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-
-
-
 
 .success {
-    grid-area: 8 / 1 / 9/ 13;
+    grid-area: 8 / 1 / 9 / 13;
     background-color: #2F2D2E;
     color: white;
-    border-radius: 15px;
-    margin-bottom: 3%;
-    font-size: 1.5rem;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 5%;
-    padding-right: 3%;
-    margin-top: -3%;
+    padding-right: 4%;
+    border-radius: 15px;
+    font-size: 1.3rem;
 }
 
 .reviews {
     grid-area: 9 / 1 / 10 / 13;
-    margin-top: 3%;
-    font-size: 1.2rem;
-
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .reviews p {
-    margin-bottom: 5%;
-    text-align: center;
+    margin-top: 5%;
 }
 
 .watch {
-    grid-area: 10 / 1 / 11/ 13;
+    grid-area: 10 / 5 / 11 / 9;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -40%;
-
-
 }
 
 .watch a {
-    background-color: coral;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 30px;
+    text-decoration: none;
     color: white;
-    font-size: 1.3rem;
-}
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-area: 1 / 1 / 2 / 13;
-}
-
-.home {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.logo {
-    grid-area: 1 / 7 / 2 / 13;
-    margin-right: 3%;
-    margin-top: 2%;
-}
-
-.home img {
-    padding-top: 12%;
-    padding-left: 12%;
-}
-
-.logo img {
-    width: 100%;
-
+    background-color: coral;
+    box-shadow: 5px 5px 10px 2px rgba(55, 53, 53, 0.8);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 15%;
 }
 
 @media only screen and (min-width:801px) {
-
     .container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-    }
-
-    .main {
-        display: grid;
-        max-height: none;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto;
         gap: 0px 0px;
-        grid-area: 2 / 1 / 4 / 13;
-        
-    }
-
-    .photo {
-        grid-area: 1 / 1 / 4 / 9;
-  
-    }
-
-    .pritchettLink {
-        grid-area: 1 / 1 / 2 / 3;
-
-    }
-
-    .tuckerLink {
-        grid-area: 3 / 1 / 4 / 2;
-        margin-right: -450%;
-        margin-left: 250%;
-        margin-top: 130%;
-    }
-
-    .dunphyLink {
-        grid-area: 2 / 8 / 3 / 9;
-        margin-right: -200%;
-        margin-bottom: -20%;
-    }
-
-    .quote {
-        grid-area: 1 / 7 / 3 / 13;
-        padding-left: 15%;
-    }
-
-
-    .about {
-        grid-area: 3 / 1 / 4 / 13;
-        margin-top: -30%;
-        margin-bottom: 90%;
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-    .family {
-        grid-area: 3 / 1 / 4 / 13;
-    }
-
-    .success {
-        grid-area: 4 / 1 / 5 / 13;
-        margin-bottom: 60%;
-        font-size: 2rem;
-    }
-
-    .reviews {
-        grid-area: 5 / 1 / 6 / 13;
-        margin-top: -55%;
-        font-size: 1.7rem;
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-
-    .watch {
-        grid-area: 6 / 1 / 7 / 13;
-        margin-top: -305%;
-
-    }
-
-    .watch a{
-        font-size: 2rem;
-    }
-
-    .header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-        grid-area: 1 / 1 / 2 / 13;
     }
 
     .home {
@@ -320,52 +187,125 @@
     }
 
     .logo {
-        grid-area: 1 / 9 / 2 / 13;
+        grid-area: 1 / 12 / 2 / 13;
     }
 
+    .logo img{
+        width: 250%;
+    }
+
+    .photo {
+        grid-area: 2 / 1 / 5 / 8;
+        justify-content: left;
+
+    }
+
+    .photo img{
+        width: 100%;
+    }
+
+    .pritchettLink {
+        grid-area: 2 / 2 / 3 / 4;
+       margin-right: 10%;
+       margin-left: -2%;
+       margin-top: 50%;
+    }
+
+
+
+    .tuckerLink {
+        grid-area: 4 / 1 / 5 / 4;
+
+    }
+
+    .dunphyLink {
+        grid-area: 3 / 7 / 4 / 9;
+    }
+
+    .quote {
+        grid-area: 2 / 9 / 5 / 13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+        margin-bottom: 15%;
+    }
+
+    .about {
+        grid-area: 5 / 1 / 6 / 13;
+    }
+
+    .family {
+        grid-area: 6 / 1 / 7 / 7;
+       
+    }
+
+    .success {
+        grid-area: 6 / 7 / 7 / 13;
+        background-color: coral;
+        margin-left: 3%;
+        margin-top: 0%;
+        margin-bottom: 1.4%;
+        margin-right: -2%;
+        padding-left:3%;
+        padding-right: 3%;
+        border-radius: 0%;
+       
+       
+    }
+
+    .reviews {
+        grid-area: 7 / 1 / 8 / 13;
+    }
+
+    .watch {
+        grid-area: 8 / 5 / 9 / 9;
+    }
 }
 
 @media only screen and (min-width:1281px){
 
-.home img{
-    width: 75px;
+.photo img{
+    width: 90%;
+}
+ 
+.pritchettLink{
+    margin-right: 25%;
+    font-size: 1.8rem;
 }
 
-    .pritchettLink a{
- font-size: 2.3rem;
+.tuckerLink{
+    font-size: 1.8rem;
+}
 
-    }
+.dunphyLink{
+    grid-area: 3 / 6 / 4 / 8;
+    font-size: 1.8rem;
+}
 
-    .tuckerLink a{
-        font-size: 2.3rem;
-    }
+.quote{
+    grid-area: 2 / 8 / 5 / 13;
+    font-size: 2.5rem;
+}
 
-    .dunphyLink a{
-        font-size: 2.3rem;
-    }
+.about{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 2rem;
+}
 
-    .quote {
-       font-size: 3rem;
-       padding-left: 8%;
-       padding-right: 5%;
-    }
-
-    .about {
-        font-size: 3rem;
-        border-radius: 30px;
-    }
-
-    .success {
-        font-size: 3rem;
-        border-radius: 30px;
-    }
+.success{
+    font-size: 2rem;
+    margin-bottom: 1%;
+}
 
 .reviews{
-        font-size: 2.5rem;
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .watch a{
-font-size: 3rem;
+    font-size: 2.5rem;
 }
-
 }

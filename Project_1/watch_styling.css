@@ -42,12 +42,12 @@
 .heading {
     grid-area: 9 / 2 / 10 / 11;
     background-color: coral;
+    color: white;
     border-radius: 50px;
     margin-left: 3%;
     margin-right: 3%;
     padding-left: 3%;
     padding-right: 3%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +57,7 @@
 .disney {
     grid-area: 10 / 2 / 12 / 11;
     background-color: rgb(44, 43, 43);
+    box-shadow: 5px 5px 10px 2px rgba(102, 99, 99, 0.8);
     margin-top: 3%;
     border-radius: 50px;
     margin-left: 3%;
@@ -82,6 +83,7 @@
 .NowTV {
     grid-area: 12 / 2 / 14 / 11;
     background-color: rgb(44, 43, 43);
+    box-shadow: 5px 5px 10px 2px rgba(102, 99, 99, 0.8);
     margin-top: 3%;
     border-radius: 50px;
     margin-left: 3%;
@@ -104,6 +106,7 @@
 .Channel4 {
     grid-area: 14 / 2 / 16 / 11;
     background-color: rgb(44, 43, 43);
+    box-shadow: 5px 5px 10px 2px rgba(102, 99, 99, 0.8);
     margin-top: 3%;
     border-radius: 50px;
     margin-left: 3%;
