@@ -45,6 +45,7 @@
 .family img {
   border-radius: 15px;
   margin-top: 10%;
+  width: 80%;
 }
 
 .quote {
@@ -147,16 +148,16 @@
   
   .mitchel {
     width: 70%;
-    margin-left: 10%;
+    margin-left: 15%;
   }
   
   .lily {
     width: 70%;
-    margin-left: 0%;
+    margin-left: 10%;
   }
 
   .watch{
-    margin-top: 15%;
+    margin-top: 35%;
   }
 .watch a{
   font-size: 1.8rem;
@@ -198,7 +199,12 @@
     font-size: 2.5rem;
   }
 
+.watch{
+  margin-top: 35%;
+}
+
   .watch a {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  
   }
 }
