@@ -1,177 +1,259 @@
 * {
-  box-sizing: border-box;
+
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 175%;
+  letter-spacing: 0.5px;
 }
 
 .container {
-  display: grid; 
-  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows:  0.1fr 1fr 1fr 0.8fr 0.8fr 0.5fr ; 
-  gap: 0px 0px; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 0px 0px;
 }
 
-.logo{
+.home {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.home img {
+  padding-left: 15%;
+  padding-top: 15%;
+  width: 50px;
+}
+
+.logo {
   grid-area: 1/ 10/ 2/ 16;
   display: flex;
   justify-content: right;
   align-content: center;
 }
 
-.logo img{
-  width: 90%;
+.logo img {
+  width: 100%;
+  padding-top: 3%;
+  padding-right: 3%;
 }
 
-.Family {
+.family {
   grid-area: 2 / 1 / 3 / 11;
-  
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.Family img {
+.family img {
+  border-radius: 15px;
+  margin-top: 10%;
+}
 
-  display: block;
+.quote {
+  grid-area: 2 / 11 / 3 / 16;
   margin: auto;
-  border-radius: 3%;
-  margin-top: 3vw;
+  font-size: 1.5rem;
+  padding-right: 10%;
+  text-align: center;
 }
 
-.About {
+.about {
   grid-area: 3 / 1 / 4 / 16;
   background-color: #2F2D2E;
   color: white;
   border-radius: 10px;
-
+  margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 3%;
   margin-right: 3%;
   padding-left: 3%;
   padding-right: 3%;
-  line-height: 120%;
-  font-size: 2.5vw;
+  font-size: 1.3rem;
 }
 
-.Family-Quote {
-  grid-area: 2 / 11 / 3 / 16; 
-  margin: auto;
-  font-size: 3.2vw;
-  padding-right: 10%;
-  text-align: center;
+.about h2 {
+  font-size: 1.8rem;
 }
 
-.Header {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.Header img {
-  padding-left: 15%;
-  padding-top: 15%;
-  width:50px;
-}
-
-
-.Phil{
+.phil {
   grid-area: 5 / 8 / 6 / 13;
   border-radius: 5%;
-  margin-left: 5%;
-  
-
+  margin-left: 15%;
+  margin-top: 15%;
+  width: 80%;
 }
 
 
-.Claire{
+.claire {
   grid-area: 5 / 3 / 6 / 8;
   border-radius: 5%;
-  margin-left: 5%;
- 
+  margin-left: 20%;
+  margin-top: 15%;
+  width: 80%;
 }
 
- .Hailey{
-  grid-area: 4 / 1 / 5 / 6; 
-
+.hailey {
+  grid-area: 4 / 1 / 5 / 6;
   border-radius: 5%;
-  margin-left: 5%;
+  margin-left: 10%;
+  width: 80%;
 }
 
-.Alex{
+.alex {
   grid-area: 4 / 6 / 5 / 11;
   border-radius: 5%;
   margin-left: 5%;
+  width: 80%;
 }
 
- .Luke{
-  grid-area: 4 / 11 / 5 / 16; 
+.luke {
+  grid-area: 4 / 11 / 5 / 16;
   border-radius: 5%;
-  margin-left: 5%;
+  width: 80%;
 }
 
 
-.Watch {
-  grid-area: 5/ 6 / 6 / 9;  
-  font-size: 2.5vw;
+.watch {
+  grid-area: 6/ 7 / 7 / 10;
   background-color: coral;
-  padding: 15px 32px;   
+  padding: 15px 32px;
   border-radius: 35px;
+  display: flex;
   align-self: center;
-  justify-self: right;
-  margin-top: 36vw;
+  justify-self: center;
+  margin-top: 45%;
+  margin-bottom: 45%;
   box-shadow: 5px 5px 10px 2px rgba(146, 138, 138, 0.8);
 }
 
-#watch_link {
-  color: white; 
-  font-size: max(2vw, 20px);  
-  
+.watch a {
+  color: white;
+  font-size: 1.5rem;
+
 }
 
 
 @media only screen and (min-width:801px) {
-  .container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 0.1fr 1fr 1fr 1fr 0.1fr; 
-    gap: 0px 0px; 
-  }  
 
-.logo img{
-  width: 70%;
-}
-
-  .Header img {
-    width: 5vw;
-  
-  
+  .logo img {
+    width: 80%;
+    padding-top: 3%;
+    padding-right: 3%;
   }
-  .Phil{
+
+  .family {
+    width: 80%;
+    margin-left: 5%;
+  }
+
+  .quote {
+    grid-area: 2 / 9 / 3 / 16;
+    margin-left: 10%;
+    font-size: 1.8rem;
+  }
+
+  .about {
+    font-size: 1.5rem;
+  }
+
+  .phil {
     grid-area: 4 / 1 / 5 / 4;
     margin-top: 0%;
+    width: 80%;
+    margin-left: 20%;
   }
 
 
- 
-  
-  .Claire{
-    grid-area: 4 / 4 / 5 / 7;
+  .claire {
+    grid-area: 4 / 3 / 5 / 6;
     margin-top: 0%;
-  }
+    width: 80%;
+    margin-left: 50%;
   
-   .Hailey{
-    grid-area: 4 / 7 / 5 / 10; 
-   
   }
-  
-  .Alex{
+
+  .hailey {
+    grid-area: 4 / 7 / 5 / 10;
+    width: 80%;
+  }
+
+  .alex {
     grid-area: 4 / 10 / 5 / 13;
-  }
-  
-   .Luke{
-    grid-area: 4 / 13 / 5 / 16;
-  }
-
-  .Watch{
-    grid-area: 5 / 6 / 6 / 10;
-    margin-top: -40vw;
-    margin-left: 8vw;
-    justify-self: center;
+    width: 80%;
 
   }
- 
+
+  .luke {
+    grid-area: 4 / 12 / 5 / 15;
+    width: 80%;
+    margin-left: 30%;
+  }
+
+  .watch {
+    grid-area: 5 / 7 / 6 / 10;
+    margin-top: 40%;
+  }
+
+  .watch a{
+    font-size: 1.8rem;
+  }
+
+}
+
+@media only screen and (min-width:1281px) {
+
+  .home img {
+    width: 50%;
+  }
+
+  .logo img {
+    width: 70%;
+    padding-top: 3%;
+    padding-right: 3%;
+  }
+
+  .family {
+    width: 70%;
+    margin-left: 10%;
+  }
+
+  .quote {
+    grid-area: 2 / 8 / 3 / 16;
+    margin-left: 14%;
+    font-size: 2.5rem;
+  }
+
+  .about {
+    margin-left: 6%;
+    margin-right: 6%;
+    font-size: 2rem;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  .phil {
+    width: 70%;
+  }
+
+
+  .claire {
+    width: 70%;
+  }
+
+  .hailey {
+    width: 70%;
+  }
+
+  .alex {
+    width: 70%;
+  }
+
+  .luke {
+    width: 70%;
+  }
+
+  .watch a {
+    font-size: 2rem;
+  }
+
 }
