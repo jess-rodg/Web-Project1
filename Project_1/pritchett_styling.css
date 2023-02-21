@@ -11,27 +11,44 @@
   gap: 0px 0px;
 }
 
-.home {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.home img {
-  padding-left: 15%;
-  padding-top: 15%;
-  width: 50px;
-}
-
-.logo {
-  grid-area: 1/ 8/ 2/ 13;
+.navBar{
+  grid-area: 1 / 1 / 2 / 13;
   display: flex;
-  justify-content: right;
-  align-content: center;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #2F2D2E;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-.logo img {
-  width: 100%;
-  padding-top: 3%;
-  padding-right: 3%;
+
+.navBar a{
+  color: white;
+  text-decoration: none;
+}
+
+li:hover a{
+color: coral;
+}
+
+li{
+  padding: 2%;
+
+}
+
+#active{
+  background-color: coral;
+}
+
+#active:hover a{
+  color: #2F2D2E;
 }
 
 .family {
@@ -123,15 +140,32 @@
   color: white;
   font-size: 1.5rem;
 } 
+@media only screen and (max-width:800px){
+  .logo img{
+    display: none;
+  }
+}
 
 @media only screen and (min-width:801px) {
-
+  .navBar{
+    grid-area: 1 / 1 / 2 / 10;
+    padding: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  } 
+  
+  .logo {
+    grid-area: 1/ 10/ 2/ 13;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+  }
+  
   .logo img {
-    width: 80%;
+    width: 90%;
     padding-top: 3%;
     padding-right: 3%;
   }
-
   .family {
     width: 70%;
     margin: auto;
@@ -186,15 +220,14 @@
 
 @media only screen and (min-width:1281px) {
 
-  .home img {
-    width: 50%;
+  .navBar{
+    font-size: 1.8rem;
   }
+  
+    .logo img {
+      width: 90%;
+    }
 
-  .logo img {
-    width: 70%;
-    padding-top: 3%;
-    padding-right: 3%;
-  }
 
   .family {
     width: 65%;
